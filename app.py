@@ -15,7 +15,7 @@ import numpy as np
 load_dotenv()
 
 # Get MongoDB connection string from .env file
-MONGO_URI = "mongodb://sparzaai:Sparzaai%40231@127.0.0.1:27017/sparzaai?authSource=sparzaai" 
+MONGO_URI = "mongodb://sparzaai:Sparzaai%40231@4.237.69.89:27017/sparzaai?authSource=sparzaai" 
 
 # Connect to MongoDB
 client = MongoClient(MONGO_URI)
