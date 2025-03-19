@@ -191,7 +191,7 @@ def tickets_home_page():
             set_page("support_tickets")
 
     # Display Image
-    st.image("Diagram 1.png", caption="System Overview", use_container_width=True)
+    st.image("Diagram 1.jpg", caption="System Overview", use_container_width=True)
 
     # Back Button
     if st.button("⬅️ Back to Home"):
