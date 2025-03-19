@@ -728,7 +728,9 @@ def manual_analysis():
 
 
 
-
+def alert_tickets():
+    if st.sidebar.button("⬅️ Tickets"):
+        set_page("tickets_home")
 
 
 
@@ -751,6 +753,7 @@ def main():
         st.write("Welcome to the Group Messages Page!")
     elif st.session_state.page == "alert_tickets":
         st.write("Welcome to the Alert Tickets Page!")
+        alert_tickets()
     elif st.session_state.page == "support_tickets":
         support_tickets_page()
 # Run the app
