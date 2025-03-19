@@ -199,7 +199,7 @@ def tickets_home_page():
 
 def support_tickets_page():
     st.sidebar.title("🔍 support Tickets")
-    option = st.sidebar.radio("", ["support Tickets", "LLM Label Generator", "Topic Analysis", "manual analysis"])
+    option = st.sidebar.radio("", ["support Tickets", "Topic Analysis", "manual analysis"])
 
     if option == "support Tickets":
         st.title("📂 support Tickets")
@@ -563,7 +563,7 @@ def manual_analysis():
         st.warning("No data available for analysis.")
         return
     
-    selected_tab = st.radio("Select Analysis Type:", ["Select Analysis Type", "Primary Clusters", "Secondary Clusters", "Secondary Outliers", "Outlier Phrases"])
+    selected_tab = st.radio("Select Analysis Type:", ["Primary Clusters", "Secondary Clusters", "Secondary Outliers", "Outlier Phrases"])
     
     # Initialize session state for manual labels if not already present
     if "manual_labels" not in st.session_state:
